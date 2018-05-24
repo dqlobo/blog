@@ -1,0 +1,46 @@
+#content-feed {
+    @include content;
+}
+
+.post-preview {
+    color: black;
+    margin: 0 0 50px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    h1 {
+	margin: 4px 0;
+	line-height: 3rem;
+    }
+    p {
+	line-height: 2rem;
+    }
+    .read-on {
+	margin-left: 20px;
+	color: $theme-primary;
+    }
+    .hero-img {
+	background-size: cover;
+	height: 500px;
+	position: relative;
+	@media (max-width: 600px) {
+	    height: 250px;
+	}
+	background-clip: border-box;
+	div {
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    padding: 5px 10px;
+	    background-color: rgba(0,0,0,0.5);
+	    color: white;
+	    font-size: 0.8em;
+	}
+
+	
+    }
+    .inset {
+	padding: 20px 30px 10px;
+    }
+}

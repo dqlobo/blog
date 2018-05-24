@@ -1,0 +1,21 @@
+@mixin content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+@mixin parallax {
+    /* background-position-y: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 600px) {
+	background-attachment: fixed;
+    }
+}
+
+@mixin color-hover-bg($color) {
+    background-color: $color;
+    &:hover {
+	background-color: darken($color, 5%);
+    }
+}

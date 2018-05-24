@@ -1,0 +1,35 @@
+header {
+    @include content;
+    font-size: 2rem;
+    color: $theme-black;
+    font-family: $title-font;
+
+    .highlight {
+	color: $theme-primary;
+	font-weight: 900;
+    }
+    a, a:visited {
+	color: inherit;
+    }
+    #profile-icon {
+	height: 1.5em;
+	width: 1.5em;
+	position: relative;
+	display: inline-block;
+	border-radius: 100%;
+	border: 2px solid $theme-primary;
+	vertical-align: middle;
+	background-image: url('../assets/img/headshot.jpg');
+	background-size: cover;
+    }
+    label {
+	margin-left: 10px;
+    }
+    @media (max-width: 700px){
+	text-align: center;
+	padding: 20px;
+    }
+    @media (min-width: 700px) {
+	padding: 50px 10px;
+    }
+}

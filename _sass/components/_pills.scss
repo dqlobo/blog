@@ -1,0 +1,16 @@
+.pills {
+    list-style-type: none;		
+    padding: 0;
+    display: inline;
+    /* margin-top: 25px; */
+    li {
+	padding: 5px 10px 5px 0;
+	display: inline;
+	border-radius: 5px;
+    }
+    .green {
+	@include color-hover-bg(green);
+    }
+    
+}
+

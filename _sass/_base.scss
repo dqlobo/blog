@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+    color: $theme-primary;
+    cursor: pointer;
+    &:visited {
+	color: $theme-primary;
+    }
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    color: $theme-black;
+    height: 100%;
+}
+
+body {
+    background-color: $theme-white;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', serif;
+    color: $theme-black;
+}
+

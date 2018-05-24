@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>dq / travel blog - {{ page.title }}</title>
+    <meta name="description" content="David LoBosco's blog">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
+    <!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+    {% include navbar.html %}
+    <secton class="post"> 
+    <div id="hero" style="background-image: url('{{page.hero-image}}');
+			  background-position: {{page.hero-position}}">
+      
+	<h1>
+	  {{ page.title }}
+	</h1>
+	<p>
+	  <span>{{ page.date | date: '%B %d, %Y' }}</span>
+
+	  {% if page.location %}
+	  //  <span>{{ page.location }}</span>
+	  {% endif %}
+
+	  {% if page.categories %}
+	  //
+
+	  <span>
+	  {% for c in page.categories %}
+	  <a class="tag" href="#">#{{c}}</a>
+	  {% endfor %}
+	  </span>
+	  
+	  {% endif %}
+	</p>
+    </div>
+    <div id="content">
+      {{ page.content }}
+    </div>
+</section>
+{% include footer.html %}
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>

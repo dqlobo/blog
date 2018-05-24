@@ -1,0 +1,31 @@
+<a href="{{ include.post.url }}">
+<div class="post-preview">
+  <div class="hero-img"
+       style="background-image: url('{{ include.post.hero-image }}'); 
+	      background-position: {{ include.post.hero-position }}">
+    
+    {% if include.post.categories %}
+      <div>
+         {% for c in include.post.categories %}
+
+             #{{c}}
+
+           {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <div class="inset">
+    <h1>{{ include.post.title }}</h1>
+    <p>
+      {% if include.post.preview %}
+      {{ include.post.preview | truncatewords: 50 }}
+      {% else %}
+      {{ include.post.content | truncatewords: 50 }}      
+      {% endif %}
+      <span class="read-on">
+	Read more
+      </span>
+    </p>
+  </div>
+</div>
+</a>
