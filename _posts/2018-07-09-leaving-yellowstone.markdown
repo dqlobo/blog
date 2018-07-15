@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Yellowstone National Park to Missoula, MT"
+title:  "Leaving Yellowstone"
 date:   2018-07-09 11:01:13 -0400
 categories: driving camping
 location: Missoula, Montana
